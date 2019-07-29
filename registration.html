@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="registration.css">
+<body>
+    <form action="#" method="post" name="main_form">
+        <h4>Registration info</h4>
+              <div><label for="username">Name</label></div>
+        <input name="name" id="username" type="text" placeholder="Enter name" maxlength="50" pattern="[A-Za-z]{1,50}" title="Name can not contain numbers">
+                 <div><label for="Userhandle">User Name</label></div>
+        <input name="Userhandle" id="Userhandle" type="text" placeholder="Enter Userhandle" pattern="[A-Za-z]{1,50}" maxlength="50" title="User Name can not contain numbers">
+                <div><label for="useremail">Email Address</label></div>				
+        <input name="email" id="useremail" type="email" placeholder="Enter email" maxlength="50">
+                <div><label for="userPass">Password</label></div>
+        <input name="password" id="userPass" type="password" placeholder="Enter password" maxlength="20" pattern=".{6,20}"  title="6 to 20 characters">
+                <div><label for="userConfirmPass">Confirm password</label></div>
+        <input name="confirmPassword" id="userConfirmPass" type="password" placeholder="Confirm password" maxlength="20" pattern=".{6,20}"  title="6 to 20 characters"> 
+                    <span id="info"></span>
+                
+        <input class="button" type="submit" value="Send" name="submit">			
+      </form>	
+
+        <script type="text/javascript" src="registration.js"></script>
+    </body>
+</html>
