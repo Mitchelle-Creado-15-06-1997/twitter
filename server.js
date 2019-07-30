@@ -15,7 +15,7 @@ app.use(session({
 	saveUninitialized: true
 }));
 
-
+app.use('/css', express.static(__dirname + '/css')
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
