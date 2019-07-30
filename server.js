@@ -57,7 +57,16 @@ app.post('/auth2',function(request,response){
 	var password = request.body.password;
 	var Name = request.body.Name;
 	var email = request.body.email;
-	connection.query('insert into user (Name, email,password,user_handle) values()')
+const courses={
+	user_handle,
+	password,
+	Name,
+	email
+	
+
+};
+	connection.query(`INSERT INTO user set?`,[courses])
+	console.log(user_handle);
 })
 
 app.get('/home', function(request, response) {
