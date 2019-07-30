@@ -15,7 +15,7 @@ app.use(session({
 	saveUninitialized: true
 }));
 
-app.use('/css', express.static(__dirname + '/css')
+app.use('/css', express.static(__dirname + '/css'));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
@@ -66,6 +66,8 @@ const courses={
 
 };
 	connection.query(`INSERT INTO user set?`,[courses])
+	response.sendFile(path.join(__dirname + '/login.html'));
+
 	console.log(user_handle);
 })
 
